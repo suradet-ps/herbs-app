@@ -1,3 +1,14 @@
+## [1.0.1](https://github.com/pharmacist-sabot/herbs-app/compare/v1.0.0...v1.0.1) (2025-12-21)
+
+### 📝 Documentation
+
+* enhance README with content and screenshots ([da8007c](https://github.com/pharmacist-sabot/herbs-app/commit/da8007c6c4a28ac28280c02911b6be81065543bd))
+* remove broken emoji characters from README headings ([5c50a47](https://github.com/pharmacist-sabot/herbs-app/commit/5c50a47c9db1cbdc0dffaf1317b75c54b0e52261))
+
+### 📦 Dependency Updates
+
+* add MIT license ([eb94d2a](https://github.com/pharmacist-sabot/herbs-app/commit/eb94d2a90a5531e9be6656beaa8b2f96d2a9ba4e))
+
 # 1.0.0 (2025-12-18)
 
 
