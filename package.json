@@ -30,7 +30,7 @@
     "@vitejs/plugin-vue": "^6.0.2",
     "@vitest/coverage-v8": "^4.0.15",
     "@vue/test-utils": "^2.4.6",
-    "@vue/tsconfig": "^0.8.1",
+    "@vue/tsconfig": "^0.9.0",
     "conventional-changelog-conventionalcommits": "^9.1.0",
     "eslint": "^9.39.1",
     "eslint-plugin-format": "^1.0.2",
