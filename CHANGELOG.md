@@ -1,3 +1,9 @@
+## [1.0.6](https://github.com/pharmacist-sabot/herbs-app/compare/v1.0.5...v1.0.6) (2026-04-17)
+
+### 📦 Dependency Updates
+
+* **deps:** update oven-sh/setup-bun action to v2.2.0 ([#11](https://github.com/pharmacist-sabot/herbs-app/issues/11)) ([91b7d68](https://github.com/pharmacist-sabot/herbs-app/commit/91b7d68096875b1cd643e824b90449a2baf588ea))
+
 ## [1.0.5](https://github.com/pharmacist-sabot/herbs-app/compare/v1.0.4...v1.0.5) (2026-04-17)
 
 ### 📦 Dependency Updates
