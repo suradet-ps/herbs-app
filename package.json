@@ -20,7 +20,7 @@
     "tailwindcss": "^4.1.17",
     "vite-plugin-pwa": "^1.2.0",
     "vue": "^3.5.25",
-    "vue-router": "^4.6.3"
+    "vue-router": "^5.0.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^6.3.0",
