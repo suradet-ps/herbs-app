@@ -1,3 +1,9 @@
+## [1.0.7](https://github.com/suradet-ps/herbs-app/compare/v1.0.6...v1.0.7) (2026-04-23)
+
+### 📦 Dependency Updates
+
+* **deps:** update dependency @types/node to v25 ([#13](https://github.com/suradet-ps/herbs-app/issues/13)) ([4e10aa0](https://github.com/suradet-ps/herbs-app/commit/4e10aa07d91f2dd63004f372a598e66215550c0a))
+
 ## [1.0.6](https://github.com/pharmacist-sabot/herbs-app/compare/v1.0.5...v1.0.6) (2026-04-17)
 
 ### 📦 Dependency Updates
