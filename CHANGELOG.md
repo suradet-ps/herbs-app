@@ -1,3 +1,9 @@
+## [1.0.9](https://github.com/suradet-ps/herbs-app/compare/v1.0.8...v1.0.9) (2026-04-25)
+
+### 📦 Dependency Updates
+
+* **deps:** update dependency eslint-plugin-format to v2 ([#15](https://github.com/suradet-ps/herbs-app/issues/15)) ([d69fbf7](https://github.com/suradet-ps/herbs-app/commit/d69fbf7401967911032345d8bc5bafdbe3ebaf90))
+
 ## [1.0.8](https://github.com/suradet-ps/herbs-app/compare/v1.0.7...v1.0.8) (2026-04-23)
 
 ### 📦 Dependency Updates
