@@ -4,10 +4,10 @@
 
 [![CI Quality](https://github.com/pharmacist-sabot/herbs-app/actions/workflows/ci-quality.yml/badge.svg?branch=main)](https://github.com/pharmacist-sabot/herbs-app/actions/workflows/ci-quality.yml)
 [![Vue.js](https://img.shields.io/badge/Vue.js-v3.5+-4FC08D?logo=vue.js&logoColor=white)](https://vuejs.org/)
-[![Vite](https://img.shields.io/badge/Vite-v7.2+-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-v5.9+-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.1+-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Bun](https://img.shields.io/badge/Bun-v1.2+-000000?logo=bun&logoColor=white)](https://bun.sh/)
+[![Vite](https://img.shields.io/badge/Vite-v8.1+-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-v6.0+-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.3+-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Bun](https://img.shields.io/badge/Bun-v1.3+-000000?logo=bun&logoColor=white)](https://bun.sh/)
 [![PWA Ready](https://img.shields.io/badge/PWA-Ready-5A0FC8?logo=pwa&logoColor=white)](https://web.dev/progressive-web-apps/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
@@ -85,7 +85,7 @@ Follow these steps to set up the project locally.
 
 ```
 herbs-app/
-├── public/              # Static assets (icons, manifest)
+├── public/              # Static assets (icons, manifest, placeholder)
 ├── src/
 │   ├── assets/          # CSS and images
 │   ├── components/      # Reusable Vue components
@@ -95,9 +95,10 @@ herbs-app/
 │   ├── views/           # Page views
 │   ├── App.vue          # Root component
 │   └── main.ts          # Application entry point
-├── .env                 # Environment variables
+├── .env.example         # Environment variable template
 ├── vite.config.ts       # Vite and PWA configuration
 ├── tsconfig.json        # TypeScript configuration
+├── eslint.config.mjs    # ESLint configuration
 └── package.json         # Dependencies and scripts
 ```
 
