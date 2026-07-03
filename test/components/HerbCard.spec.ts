@@ -1,7 +1,6 @@
+import type { Herb } from '@/types/Herb';
 import { mount } from '@vue/test-utils';
 import { describe, expect, it } from 'vitest';
-
-import type { Herb } from '@/types/Herb';
 
 import HerbCard from '@/components/HerbCard.vue';
 

@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue';
-
 import type { Herb } from '@/types/Herb';
+import { computed, onMounted, ref } from 'vue';
 
 import Header from '@/components/Header.vue';
 import HerbCard from '@/components/HerbCard.vue';
