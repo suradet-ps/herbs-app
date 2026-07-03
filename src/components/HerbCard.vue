@@ -1,9 +1,12 @@
 <script setup lang="ts">
 import type { Herb } from '@/types/Herb';
+import { onMounted, ref } from 'vue';
 
-defineProps<{
+const props = defineProps<{
   herb: Herb;
 }>();
+
+const imgRef = ref<HTMLImageElement>();
 
 function truncateText(text: string | undefined, maxLength: number): string {
   if (!text)
@@ -12,6 +15,18 @@ function truncateText(text: string | undefined, maxLength: number): string {
     return text;
   return `${text.substring(0, maxLength)}...`;
 }
+
+onMounted(() => {
+  if (props.herb.ImageUrl && props.herb.ImageUrl.startsWith('https://')) {
+    const img = new Image();
+    img.onload = () => {
+      if (imgRef.value) {
+        imgRef.value.src = props.herb.ImageUrl!;
+      }
+    };
+    img.src = props.herb.ImageUrl;
+  }
+});
 </script>
 
 <template>
@@ -19,7 +34,8 @@ function truncateText(text: string | undefined, maxLength: number): string {
     <!-- Herb Image -->
     <div class="h-48 overflow-hidden relative bg-slate-100">
       <img
-        :src="herb.ImageUrl || '/placeholder-herb.png'"
+        ref="imgRef"
+        src="/placeholder-herb.svg"
         :alt="herb.Name"
         loading="lazy"
         class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
