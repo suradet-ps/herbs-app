@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Herb } from '@/types/Herb';
-import { onMounted, ref } from 'vue';
+import { ref, watch } from 'vue';
 
 const props = defineProps<{
   herb: Herb;
@@ -16,17 +16,23 @@ function truncateText(text: string | undefined, maxLength: number): string {
   return `${text.substring(0, maxLength)}...`;
 }
 
-onMounted(() => {
-  if (props.herb.ImageUrl && props.herb.ImageUrl.startsWith('https://')) {
-    const img = new Image();
-    img.onload = () => {
-      if (imgRef.value) {
-        imgRef.value.src = props.herb.ImageUrl!;
-      }
-    };
-    img.src = props.herb.ImageUrl;
+function loadImage(url: string | undefined | null): void {
+  if (imgRef.value) {
+    imgRef.value.src = '/placeholder-herb.svg';
   }
-});
+  if (!url)
+    return;
+
+  const img = new Image();
+  img.onload = () => {
+    if (imgRef.value) {
+      imgRef.value.src = url;
+    }
+  };
+  img.src = url;
+}
+
+watch(() => props.herb.ImageUrl, loadImage, { immediate: true });
 </script>
 
 <template>
@@ -38,7 +44,7 @@ onMounted(() => {
         src="/placeholder-herb.svg"
         :alt="herb.Name"
         loading="lazy"
-        class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
+        class="w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110"
       >
       <!-- Overlay Gradient -->
       <div class="absolute inset-0 bg-linear-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
