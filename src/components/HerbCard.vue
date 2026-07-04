@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Herb } from '@/types/Herb';
-import { ref, watch } from 'vue';
+import { onMounted, ref, watch } from 'vue';
 
 const props = defineProps<{
   herb: Herb;
@@ -32,7 +32,8 @@ function loadImage(url: string | undefined | null): void {
   img.src = url;
 }
 
-watch(() => props.herb.ImageUrl, loadImage, { immediate: true });
+onMounted(() => loadImage(props.herb.ImageUrl));
+watch(() => props.herb.ImageUrl, loadImage);
 </script>
 
 <template>
@@ -41,7 +42,6 @@ watch(() => props.herb.ImageUrl, loadImage, { immediate: true });
     <div class="h-48 overflow-hidden relative bg-slate-100">
       <img
         ref="imgRef"
-        src="/placeholder-herb.svg"
         :alt="herb.Name"
         loading="lazy"
         class="w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110"
