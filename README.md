@@ -1,145 +1,140 @@
 # Thai Herbal NHSO Support App
 
-> A modern, fast, and offline-capable web application for browsing Thailand's NHSO-supported herbal medicines.
-
-[![CI Quality](https://github.com/pharmacist-sabot/herbs-app/actions/workflows/ci-quality.yml/badge.svg?branch=main)](https://github.com/pharmacist-sabot/herbs-app/actions/workflows/ci-quality.yml)
-[![Vue.js](https://img.shields.io/badge/Vue.js-v3.5+-4FC08D?logo=vue.js&logoColor=white)](https://vuejs.org/)
-[![Vite](https://img.shields.io/badge/Vite-v8.1+-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-v6.0+-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.3+-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Bun](https://img.shields.io/badge/Bun-v1.3+-000000?logo=bun&logoColor=white)](https://bun.sh/)
-[![PWA Ready](https://img.shields.io/badge/PWA-Ready-5A0FC8?logo=pwa&logoColor=white)](https://web.dev/progressive-web-apps/)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-
-## Live Demo
-
-**[👉 Try the App](https://herbs-app.rxdevman.com)**
-
-![Thai Herbal NHSO Support App](public/screenshots/homepage.png)
-
-## Overview
-
-The **Thai Herbal NHSO Support App** is a digital formulary designed for healthcare professionals at Sabot Hospital and beyond. It provides instant access to detailed information about herbal medicines covered by the National Health Security Office (NHSO).
-
-Built with **Vue 3**, **TypeScript**, and **Vite**, this application prioritizes performance, type safety, and user experience. It leverages **Google Sheets** as a headless CMS, allowing pharmacists to update medical data easily without touching a line of code.
-
-## Key Features
-
-- **Blazing Fast**: Powered by Vite and Vue 3 for instant page loads and interactions.
-- **Type Safe**: Built with TypeScript for robust and maintainable code.
-- **PWA Support**: Fully installable on mobile and desktop devices with offline capabilities.
-- **Instant Search**: Real-time filtering by herb name, description, or category.
-- **Google Sheets Backend**: Data is fetched dynamically from a Google Sheet via Google Apps Script.
-- **Responsive Design**: A clean, card-based interface that adapts to any screen size.
-
-## Tech Stack
-
-- **Framework**: [Vue 3](https://vuejs.org/) (Composition API)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Build Tool**: [Vite](https://vitejs.dev/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/) v4
-- **Routing**: [Vue Router](https://router.vuejs.org/)
-- **PWA**: [Vite Plugin PWA](https://vite-pwa-org.netlify.app/)
-- **Backend**: Google Apps Script (serving JSON from Google Sheets)
-- **Package Manager**: [Bun](https://bun.sh/)
-
-## Getting Started
-
-Follow these steps to set up the project locally.
-
-### Prerequisites
-
-- **Bun** (v1.0+) or **Node.js** (v18+)
-- A Google Apps Script deployment URL (for the API)
-
-### Installation
-
-1. **Clone the repository**
-
-   ```bash
-   git clone https://github.com/pharmacist-sabot/herbs-app.git
-   cd herbs-app
-   ```
-
-2. **Install dependencies**
-
-   ```bash
-   bun install
-   # or npm install
-   ```
-
-3. **Configure Environment Variables**
-   Create a `.env` file in the root directory and add your Google Apps Script API URL:
-
-   ```env
-   VITE_GOOGLE_API_URL=https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec
-   ```
-
-4. **Start the development server**
-   ```bash
-   bun run dev
-   ```
-   The app will be available at `http://localhost:5173`.
-
-## Project Structure
-
 ```
-herbs-app/
-├── public/              # Static assets (icons, manifest, placeholder)
-├── src/
-│   ├── assets/          # CSS and images
-│   ├── components/      # Reusable Vue components
-│   ├── router/          # Vue Router configuration
-│   ├── services/        # API services (herbsService.ts)
-│   ├── types/           # TypeScript type definitions
-│   ├── views/           # Page views
-│   ├── App.vue          # Root component
-│   └── main.ts          # Application entry point
-├── .env.example         # Environment variable template
-├── vite.config.ts       # Vite and PWA configuration
-├── tsconfig.json        # TypeScript configuration
-├── eslint.config.mjs    # ESLint configuration
-└── package.json         # Dependencies and scripts
+██╗  ██╗███████╗██████╗ ██████╗  ██████╗ █████╗ ██████╗ ██████╗
+██║  ██║██╔════╝██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗██╔══██╗
+███████║█████╗  ██████╔╝██████╔╝███████╗███████║██████╔╝██████╔╝
+██║  ██║██╔══╝  ██╔══██╗██╔══██╗╚════██║██╔══██║██╔═══╝ ██╔═══╝
+██║  ██║███████╗██║  ██║██████╔╝██████╔╝██║  ██║██║     ██║
+╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝╚═════╝╚═╝  ╚═╝╚═╝╚═╝
 ```
 
-## Contributing
+---
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+## ◆ PULSE
 
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+A herbal formulary is only as useful as the pharmacist's ability to
+reach it. This is the digital formulary for NHSO-supported Thai herbal
+medicines, built for Sabot Hospital and beyond: instant search across
+herb name, description, and category; card-based detail pages; PWA
+offline capability; and a Google Sheets backend the pharmacy can edit
+without touching a line of code. The data lives where the department
+already keeps it - the app just makes it reachable.
 
-## Available Scripts
+| Search ▣ | Offline PWA ▣ | Sheets CMS ▣ | Typed ▣ |
+|---|---|---|---|
 
-| Script                  | Description                    |
-| ----------------------- | ------------------------------ |
-| `bun run dev`           | Start development server       |
-| `bun run build`         | Build for production           |
-| `bun run preview`       | Preview production build       |
-| `bun run lint`          | Run ESLint                     |
-| `bun run lint:fix`      | Fix ESLint errors              |
-| `bun run type-check`    | Run TypeScript type checking   |
-| `bun run test:unit`     | Run unit tests with Vitest     |
-| `bun run test:coverage` | Run tests with coverage report |
+*v1.0.18 - the formulary loop - fetch, search, install, consult - is
+sealed.*
 
-## Deployment
+> Built with Vue 3 + TypeScript + Vite, styled by Tailwind 4, fed by
+> Google Sheets through Apps Script - the spreadsheet is the CMS.
+>
+> **suradet-ps**, artifact keeper
 
-Build the production bundle:
+---
 
-```bash
-bun run build
+## ◆ IGNITION
+
+One runtime, three commands.
+
+```
+⟫ git clone https://github.com/pharmacist-sabot/herbs-app.git
+⟫ cd herbs-app
+⟫ bun install
+⟫ bun run dev
 ```
 
-The output will be in the `dist/` directory. You can deploy it to any static hosting service like:
+Open [http://localhost:5173](http://localhost:5173).
 
-- [Vercel](https://vercel.com/)
-- [Netlify](https://netlify.com/)
-- [Cloudflare Pages](https://pages.cloudflare.com/)
-- [GitHub Pages](https://pages.github.com/)
+<details>
+<summary>Environment</summary>
 
-## License
+A `.env` file with the Apps Script endpoint:
 
-This project is open source and available under the [MIT License](LICENSE).
+```
+VITE_GOOGLE_API_URL=https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec
+```
+
+Requires Bun v1.0+ (or Node 18+) and a Google Apps Script deployment
+URL for the API.
+
+</details>
+
+The release artifact: `⟫ bun run build` - `dist/` deploys to any
+static host. Try it live at [herbs-app.rxdevman.com](https://herbs-app.rxdevman.com).
+
+---
+
+## ◆ ANATOMY
+
+One sheet, one service, a card-based door to the formulary.
+
+- **Fetches** - `herbsService.ts` pulls the herb data from Google
+  Sheets through Apps Script - the pharmacy edits a spreadsheet, and
+  the app follows.
+- **Searches** - real-time filtering across herb name, description,
+  and category - the formulary answers as the query lands.
+- **Renders** - a clean card-based interface that adapts to any
+  screen - from the ward desktop to the phone on rounds.
+- **Installs** - the Vite PWA plugin makes the app installable and
+  offline-capable - the formulary rides in the pocket and works
+  without a signal.
+- **Types** - TypeScript types the API response end to end, and the
+  Vitest suite guards the components - the data cannot drift without
+  a test complaining.
+
+---
+
+## ◆ RITUALS
+
+**The core ceremony** - the herb consult:
+
+1. Open the app - installed on the phone, or one tab away.
+2. Type the herb's name - or its description, or its category. The
+   list filters as you type.
+3. Open the card: the NHSO-covered details, rendered from the typed
+   model.
+4. Consult and close. Offline or online, the formulary answers the
+   same.
+
+**The ceremony of the sheet** - the CMS is a spreadsheet: the
+pharmacist updates data without a deploy, without a PR, without
+touching code. The formulary's source of truth stays where the
+department already keeps it.
+
+**The ceremony of the offline page** - the network dies in the ward
+and the formulary does not notice: the herbs were cached when the
+phone was online, and the consult proceeds.
+
+---
+
+## ◆ ECHOES
+
+**Where this artifact is heading**
+
+```
+fetch    ▸ Google Sheets via Apps Script ────────────────────────────── ▸ sealed
+search   ▸ name, description, category filtering ────────────────────── ▸ sealed
+install  ▸ PWA offline capability ───────────────────────────────────── ▸ sealed
+guard    ▸ typed API + Vitest suite ─────────────────────────────────── ▸ sealed
+```
+
+**Raising the artifact** - the API service lives in
+`src/services/herbsService.ts`; the types in `src/types/`; the routes
+in `src/router/`. Gates: `bun run lint`, `bun run type-check`,
+`bun run test:unit`. Open an issue first to discuss a change.
+
+**Status** - CI quality gates every push, and releases are tagged
+automatically. [Watch the gates](.github/workflows).
+
+---
+
+```
+  ─────────────────────────────────────────
+   A formulary in a spreadsheet is a formulary
+   that only the spreadsheet can find.
+  ─────────────────────────────────────────
+```
+
+Open source under the [MIT License](LICENSE).
