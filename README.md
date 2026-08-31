@@ -22,10 +22,10 @@ without touching a line of code. The data lives where the department
 already keeps it - the app just makes it reachable.
 
 | Search ▣ | Offline PWA ▣ | Sheets CMS ▣ | Typed ▣ |
-|---|---|---|---|
+|----------|---------------|--------------|---------|
 
-*v1.0.18 - the formulary loop - fetch, search, install, consult - is
-sealed.*
+_v1.0.18 - the formulary loop - fetch, search, install, consult - is
+sealed._
 
 > Built with Vue 3 + TypeScript + Vite, styled by Tailwind 4, fed by
 > Google Sheets through Apps Script - the spreadsheet is the CMS.
