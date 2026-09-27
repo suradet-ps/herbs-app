@@ -1,13 +1,13 @@
 # Thai Herbal NHSO Support App
 
-```
-██╗  ██╗███████╗██████╗ ██████╗  ██████╗ █████╗ ██████╗ ██████╗
-██║  ██║██╔════╝██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗██╔══██╗
-███████║█████╗  ██████╔╝██████╔╝███████╗███████║██████╔╝██████╔╝
-██║  ██║██╔══╝  ██╔══██╗██╔══██╗╚════██║██╔══██║██╔═══╝ ██╔═══╝
-██║  ██║███████╗██║  ██║██████╔╝██████╔╝██║  ██║██║     ██║
-╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝╚═════╝╚═╝  ╚═╝╚═╝╚═╝
-```
+[![CI](https://github.com/suradet-ps/herbs-app/actions/workflows/ci-quality.yml/badge.svg)](https://github.com/suradet-ps/herbs-app/actions/workflows/ci-quality.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Vue v3](https://img.shields.io/badge/Vue-v3-4FC08D.svg?logo=vuedotjs&logoColor=white)](https://vuejs.org/)
+[![TypeScript v6](https://img.shields.io/badge/TypeScript-v6-3178C6.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind v4](https://img.shields.io/badge/Tailwind-v4-06B6D4.svg?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Vite v8](https://img.shields.io/badge/Vite-v8-646CFF.svg?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![PWA](https://img.shields.io/badge/PWA-installable-5A0FC8.svg?logo=pwa&logoColor=white)](https://web.dev/progressive-web-apps/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/suradet-ps/herbs-app/issues)
 
 ---
 
@@ -39,7 +39,7 @@ sealed._
 One runtime, three commands.
 
 ```
-⟫ git clone https://github.com/pharmacist-sabot/herbs-app.git
+⟫ git clone https://github.com/suradet-ps/herbs-app.git
 ⟫ cd herbs-app
 ⟫ bun install
 ⟫ bun run dev
