@@ -1,3 +1,5 @@
+## [1.0.26](https://github.com/suradet-ps/herbs-app/compare/v1.0.25...v1.0.26) (2026-10-13)
+
 ## [1.0.25](https://github.com/suradet-ps/herbs-app/compare/v1.0.24...v1.0.25) (2026-09-27)
 
 ## [1.0.24](https://github.com/suradet-ps/herbs-app/compare/v1.0.23...v1.0.24) (2026-08-31)
